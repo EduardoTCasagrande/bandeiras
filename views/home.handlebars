@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to right, #1E4098, #00A859, #FFCC29);
+            flex-direction: column; /* Adicionado para alinhar verticalmente os elementos */
+        }
+
+        h1 {
+            margin-bottom: 20px; /* Espaçamento abaixo do título */
+            color: #fff; /* Cor do texto */
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column; /* Adicionado para alinhar verticalmente os elementos dentro do formulário */
+            align-items: center; /* Adicionado para centralizar os elementos horizontalmente */
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px; /* Adicionado espaçamento abaixo das labels */
+        }
+
+        input {
+            padding: 6px;
+            font-size: 16px;
+            margin-bottom: 10px; /* Adicionado espaçamento abaixo dos inputs */
+            text-align: center;
+        }
+
+        button {
+            width: auto;
+            font-size: 16px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 10px 20px; /* Adicionado espaçamento interno para melhorar a aparência */
+        }
+
+        button:hover {
+            background-color: #317034;
+        }
+    </style>
+</head>
+<body>
+    <h1>Busca Bandeiras dos Estados Brasileiros</h1>
+    <form action="/ufs" method="post">
+        <div class="inpt">
+            <label for="nomeUF">Nome da UF: </label>
+            <input type="text" name="nomeUF" id="nomeUF" required>  
+        </div>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
